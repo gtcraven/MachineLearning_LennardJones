@@ -9,8 +9,8 @@ fullpath = os.path.abspath(pathname)
 ##############################################
 
 #The input state point. This is the point where the RDF would like to be predicted
-rhotarget = 0.01
-Ttarget = 5.0
+rhotarget = 1.0
+Ttarget = 2.0
 
 rhoc = 0.316 #LJ critical density
 Tc = 1.3262 #LJ critical temperature
@@ -96,8 +96,7 @@ if compute == True:
     lowest_end_value_of_r = r1[lowest_number_of_r_points-1] 
     
  
-    i = 0
-    while i<lowest_number_of_r_points: 
+    for i in range(0,lowest_number_of_r_points):
         RDFlist = []
         inputlist = []      
           
@@ -127,7 +126,6 @@ if compute == True:
         RDFnoarray.append(lr_pred[0])
         RDF.append(lr_pred)
         r.append(r1[i])
-        i+=1
                 
     print("Finished gathering data and computing the RDF:")
     
@@ -135,10 +133,8 @@ if compute == True:
     R = r[0:lowest_number_of_r_points:1]
     RDF_file=open(os.path.abspath(pathname)+"/ML_RDF_"+ str(rhotarget) + "_" + str(Ttarget) + ".txt", "w") #windows
     
-    k = 0
-    while k<len(R):
+    for k in range(0,len(R)):
         print(R[k],RDFnoarray[k],file = RDF_file)
-        k+=1
         
     RDF_file.close()
     
@@ -150,7 +146,3 @@ if compute == True:
     plt.xlim(0,4.0)
     plt.ylim(-0.2,3.2)    
     plt.show()
-
-
-
-
