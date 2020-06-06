@@ -1,18 +1,14 @@
+#This program generates the pressure and residual internal energy of the LJ fluid using Kernel Ridge Regression (KRR)
 import sys
 import os
 import numpy as np
-import time
-import warnings
 from sklearn.kernel_ridge import KernelRidge
 pathname = os.path.dirname(sys.argv[0])
 fullpath = os.path.abspath(pathname)
-warnings.filterwarnings("ignore",category = DeprecationWarning)
-warnings.filterwarnings("ignore",category = UserWarning)
-warnings.filterwarnings("ignore")
 #################################################################
 
 
-#The input state point. This is the point where the RDF would like to be predicted
+#The input state point. This is the point where the pressure and internal energy would like to be predicted
 rhotarget = 1.0
 Ttarget = 2.0
 
@@ -63,7 +59,7 @@ for rho in rhofolders:
 
 compute=True
 
-if Ttarget>6.0 or rhotarget>1.25:
+if Ttarget>6.4 or rhotarget>1.41:
     compute = False    
 else:    
     if rhotarget>rhotp:
