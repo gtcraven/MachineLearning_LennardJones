@@ -77,7 +77,7 @@ else:
 if compute == False: 
     print("The selected state point is either outside of the Lennard-Jones \
 fluid region or extrapolation outside of the training data must be used to \
-calculate the RDF at this point. Select another state point.")
+calculate properties at this point. Select another state point.")
 
 
 if compute == True:
