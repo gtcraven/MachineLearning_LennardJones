@@ -9,6 +9,8 @@ In order to use both programs, unzip the corresponding dataset(RDF_Data.zip or G
 The relevant citations for these programs and the RDF dataset are:
 
   G. T. Craven, Machine learning codes for structural and thermodynamic properties of a Lennard-Jones fluid, (2020)
+  
   G. T. Craven, Lennard-Jones radial distribution function dataset, (2020)
+  
   G. T. Craven, N. Lubbers, K. Barros, and S. Tretiak, J. Chem. Phys. XX, XXXX (2020)
 
