@@ -5,6 +5,9 @@ import numpy as np
 from sklearn.kernel_ridge import KernelRidge
 pathname = os.path.dirname(sys.argv[0])
 fullpath = os.path.abspath(pathname)
+#Ignore warnings that occur during hyperparameter optimization
+import warnings
+warnings.filterwarnings("ignore",category = UserWarning)
 #################################################################
 
 
@@ -164,7 +167,8 @@ if compute == True:
 
     
     
-print("rho =", rhotarget, "T =", Ttarget,"Predicted Pressure =", round(Ppredicted[0],5),"Predicted Internal Energy =", round(Upredicted[0],6))
+if compute == True:    
+    print("rho =", rhotarget, "T =", Ttarget,"Predicted Pressure =", round(Ppredicted[0],5),"Predicted Internal Energy =", round(Upredicted[0],6))
 
 
 
