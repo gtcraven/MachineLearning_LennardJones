@@ -141,8 +141,8 @@ if compute == True:
     #Plot the RDF
     plt.figure(figsize=(8,4.75))
     plt.plot(r,RDF,ls = '-',lw=2.0,color = "r")
-    plt.ylabel(r'$g(r)$',fontsize=26,labelpad = 6)
-    plt.xlabel(r'$r$',fontsize=26,labelpad = 2)
+    plt.ylabel(r'$g(r)$')
+    plt.xlabel(r'$r$')
     plt.xlim(0,4.0)
     plt.ylim(-0.2,3.2)    
     plt.show()
