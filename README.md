@@ -12,6 +12,6 @@ The relevant citations for these programs and the RDF dataset are:
   
  - G. T. Craven, "Lennard-Jones radial distribution function dataset", (2020)
   
- - G. T. Craven, N. Lubbers, K. Barros, and S. Tretiak, Submitted XX, XXXX (2020)
+ - G. T. Craven, N. Lubbers, K. Barros, and S. Tretiak, J. Chem. Phys. XX, XXXX (2020)
   
  - G. T. Craven, N. Lubbers, K. Barros, and S. Tretiak, J. Phys. Chem. Lett. 11, 4372–4378 (2020)
