@@ -1,6 +1,3 @@
-#+TITLE: MachineLearning_LennardJones
-#+AUTHOR: Galen Craven
-
 * Summary
 
 This repository contains machine learning programs that can be used to predict the radial distribution function (RDF), pressure, and residual internal energy of a Lennard-Jones fluid. 
